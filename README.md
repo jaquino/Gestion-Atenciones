@@ -78,3 +78,11 @@ Nota:
 - Recuerde que el formato de la fecha debe ser de tipo “dd/mm/yyyy”
 - Además para los números decimales se debe tener solo 2 digitos en la parte decimal.
 ```
+
+---
+## Bonus Track
+- [x] Exporte la base consolidada en una hoja llamada “Atenciones” perteneciente a un libro de excel llamado “Consolidado2.xlsx”.
+- [x] En el mismo libro “Consolidado2.xlsx” exportar la base consolidada solo de las atenciones cuyo "Estado" está "En curso" en una hoja llamada "Atenciones en Curso"
+- [x] En el mismo libro “Consolidado2.xlsx” exportar la base consolidada solo de las atenciones cuyo "Estado" está "Cerrado" en una hoja llamada "Atenciones Cerradas"
+
+[Ver el archivo: "Consolidado2.xlsx"](Consolidado2.xlsx)
