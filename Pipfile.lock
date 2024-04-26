@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "b4f5e0b6ec478e70db81690e0c2599e29e37db5f84e566ce3a1a9dcd1885b441"
+            "sha256": "30570512e8c81cdd61ed0c79caaa78c60801d7965efcb070fa1ccae93de64522"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -36,6 +36,15 @@
             ],
             "index": "pypi",
             "version": "==0.8.2"
+        },
+        "xlsxwriter": {
+            "hashes": [
+                "sha256:9977d0c661a72866a61f9f7a809e25ebbb0fb7036baa3b9fe74afcfca6b3cb8c",
+                "sha256:ecfd5405b3e0e228219bcaf24c2ca0915e012ca9464a14048021d21a995d490e"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.6'",
+            "version": "==3.2.0"
         }
     },
     "develop": {
@@ -416,11 +425,11 @@
         },
         "ipython": {
             "hashes": [
-                "sha256:07232af52a5ba146dc3372c7bf52a0f890a23edf38d77caef8d53f9cdc2584c1",
-                "sha256:7468edaf4f6de3e1b912e57f66c241e6fd3c7099f2ec2136e239e142e800274d"
+                "sha256:010db3f8a728a578bb641fdd06c063b9fb8e96a9464c63aec6310fbcb5e80501",
+                "sha256:d7bf2f6c4314984e3e02393213bab8703cf163ede39672ce5918c51fe253a2a3"
             ],
             "markers": "python_version >= '3.10'",
-            "version": "==8.23.0"
+            "version": "==8.24.0"
         },
         "isoduration": {
             "hashes": [
@@ -529,11 +538,11 @@
         },
         "jupyterlab": {
             "hashes": [
-                "sha256:7935f36ba26eb615183a4f5c2bbca5791b5108ce2a00b5505f8cfd100d53648e",
-                "sha256:cf3e862bc10dbf4331e4eb37438634f813c238cfc62c71c640b3b3b2caa089a8"
+                "sha256:32532a43d35d4aaab328722e738ee527915fd572a5c84ae5eeba6e409d0cdc55",
+                "sha256:43ccd32a3afa641912e4e2d2875b8cebbebcead57a35e2987c43bf496ac49d58"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==4.1.6"
+            "version": "==4.1.7"
         },
         "jupyterlab-pygments": {
             "hashes": [

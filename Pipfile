@@ -6,6 +6,7 @@ name = "pypi"
 [packages]
 xlsx2csv = "*"
 polars = "==0.20.21"
+xlsxwriter = "*"
 
 [dev-packages]
 ipykernel = "*"
