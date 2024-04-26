@@ -4,8 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-polars = "*"
 xlsx2csv = "*"
+polars = "==0.20.21"
 
 [dev-packages]
 ipykernel = "*"
