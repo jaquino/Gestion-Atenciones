@@ -4,6 +4,7 @@
 ---
 
 ## TRANSFORMACIONES A REALIZAR
+
 ### BASE TICKETS
 #### Tickets Históricos
 - [x] Importe la base “Tickets Historico.txt”, indicando que solo se importen las columnas: Numero Ticket, Ubicacion, Service Desk, Estado, Fecha Creacion,
@@ -20,11 +21,31 @@ Fecha Termino y Fecha Cierre. Las columnas Fecha Creacion, Fecha Termino y Fecha
 - [x] Divida la columna [Ubicación], en las columnas [Agencia] y [AgenciaID], use como delimitador “ - “.
 - [x] Asigne el tipo de dato entero a la columna AgenciaID.
 - [x] Cree la columna [Fecha Real Fin] basado en la siguiente regla:
+```
     - SI [Fecha Termino] es nulo ENTONCES [Fecha Cierre] SINO [Fecha Termino]
+```
 - [x] Cree la columna [Dias Cierre], la cual es la diferencia en días entre la [Fecha Real Fin] y [Fecha Creacion].
 - [x] Cree la columna [Grupo Dias] basado en la siguiente regla:
+```
     - SI [Dias Cierre] es nulo ENTONCES Nulo
     - SI [Dias Cierre] <= 3 ENTONCES “0 a 3 días”
     - SI [Dias Cierre] <= 7 ENTONCES “4 a 7 días”
     - SI [Dias Cierre] <= 15 ENTONCES “8 a 15 días”
     - SI [Dias Cierre] > 15 ENTONCES “+15 días”
+```
+---
+### BASE ATENCIONES
+#### Importando Atenciones
+- [x] Importe los Excel de la carpeta Atenciones, recuerde que la importación se debe realizar de manera masiva.
+- [x] De cada Excel solo se deberá importar las columnas:
+    - Numero Ticket
+    - Tipo de Ticket
+    - Proveedor
+    - Costo Atencion
+- [x] La columna Costo Atencion debe ser de tipo texto.
+- [x] La consulta anterior deberá almacenar el resultado en un dataframe llamado Atenciones.
+#### Transformando Atenciones
+- [x] Cambie el nombre de la columna “Numero Ticket” por “TicketID”.
+- [x] Coloque en mayúscula los valores de la columna [Costo Atencion], luego realice el reemplace de la coma por el punto; así también, reemplace los textos “SIN COSTO” y “COSTO CERO” por el valor “0”.
+- [x] Convierta la columna [Costo Atencion] al tipo de dato decimal, todos aquellos valores que no se puedan convertir deberían ser reemplazados por nulo.
+---
